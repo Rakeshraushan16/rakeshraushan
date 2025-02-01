@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Raushan - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Rakesh Raushan</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="profile-img">
+                <img src="images/profile.jpg" alt="Rakesh Raushan" class="profile-photo">
+            </div>
+            <h1 class="typing-text">Welcome! I'm Rakesh Raushan</h1>
+            <p class="subtitle">B.Tech CSE Student | Developer | Problem Solver</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary">Contact Me</a>
+                <a href="#projects" class="cta-secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-aos="fade-up">About Me</h2>
+        <div class="about-content" data-aos="fade-up">
+            <div class="about-text">
+                <p>I am a passionate B.Tech CSE student with a strong foundation in various programming languages and technologies. My journey in computer science has equipped me with both theoretical knowledge and practical skills, making me capable of tackling complex problems and creating innovative solutions.</p>
+                <p>I believe in continuous learning and staying updated with the latest technological trends. My goal is to contribute to meaningful projects that make a positive impact on society through technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 data-aos="fade-up">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-database"></i>
+                <h3>SQL & DBMS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-code"></i>
+                <h3>DSA</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-laptop-code"></i>
+                <h3>C Programming</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="zoom-in">
+                <h3>SMS Spam Detection</h3>
+                <p>A machine learning project that classifies SMS messages as spam or legitimate using advanced NLP techniques.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>NLP</span>
+                </div>
+                <a href="https://github.com/Rakeshraushan16" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Handwritten Digit Detection</h3>
+                <p>Deep learning model that recognizes handwritten digits using convolutional neural networks.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Deep Learning</span>
+                    <span>Computer Vision</span>
+                </div>
+                <a href="https://github.com/Rakeshraushan16" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="social-links" data-aos="fade-up">
+                <a href="https://www.linkedin.com/in/rakesh-raushan-6799a92a5" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Rakeshraushan16" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_rakesh_raushan_singh" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/Rakesh25587" target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rakesh Raushan. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to Top</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
