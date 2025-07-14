@@ -3,158 +3,580 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rakesh Raushan - B.Tech CSE Student, Developer, and Problem Solver. Explore my portfolio showcasing projects in machine learning, web development, and more.">
+    <meta name="keywords" content="Rakesh Raushan, portfolio, developer, B.Tech CSE, machine learning, web development, programming">
+    <meta name="author" content="Rakesh Raushan">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rakesh Raushan - Portfolio">
+    <meta property="og:description" content="B.Tech CSE Student | Developer | Problem Solver">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
     <title>Rakesh Raushan - Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="images/profile.jpg" as="image">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+        <i class="fas fa-sun" aria-hidden="true"></i>
+    </button>
+    
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">Rakesh Raushan</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home" aria-label="Rakesh Raushan - Home">Rakesh Raushan</a>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="burger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <div class="profile-img">
-                <img src="images/profile.jpg" alt="Rakesh Raushan" class="profile-photo">
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
             </div>
-            <h1 class="typing-text">Welcome! I'm Rakesh Raushan</h1>
-            <p class="subtitle">B.Tech CSE Student | Developer | Problem Solver</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="cta-primary">Contact Me</a>
-                <a href="#projects" class="cta-secondary">View Projects</a>
+            <div class="hero-content" data-aos="fade-up">
+                <figure class="profile-img">
+                    <img src="images/profile.jpg" alt="Rakesh Raushan - Professional headshot" class="profile-photo" loading="eager">
+                </figure>
+                <h1 id="hero-heading" class="typing-text">Welcome! I'm Rakesh Raushan</h1>
+                <p class="subtitle">B.Tech CSE Student | Developer | Problem Solver</p>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Programming Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-primary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="#projects" class="cta-secondary">
+                        <span>View Projects</span>
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                    </a>
+                    <a href="./resume.pdf" class="cta-tertiary" download>
+                        <span>Download Resume</span>
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-arrow"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 data-aos="fade-up">About Me</h2>
-        <div class="about-content" data-aos="fade-up">
-            <div class="about-text">
-                <p>I am a passionate B.Tech CSE student with a strong foundation in various programming languages and technologies. My journey in computer science has equipped me with both theoretical knowledge and practical skills, making me capable of tackling complex problems and creating innovative solutions.</p>
-                <p>I believe in continuous learning and staying updated with the latest technological trends. My goal is to contribute to meaningful projects that make a positive impact on society through technology.</p>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <header class="section-header" data-aos="fade-up">
+                    <h2 id="about-heading">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </header>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                    <article class="about-text">
+                        <p>I am a passionate B.Tech CSE student with a strong foundation in various programming languages and technologies. My journey in computer science has equipped me with both theoretical knowledge and practical skills, making me capable of tackling complex problems and creating innovative solutions.</p>
+                        <p>I believe in continuous learning and staying updated with the latest technological trends. My goal is to contribute to meaningful projects that make a positive impact on society through technology.</p>
+                        <p>When I\'m not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with fellow developers in the community.</p>
+                    </article>
+                    <aside class="about-highlights">
+                        <div class="highlight-item" data-aos="zoom-in" data-aos-delay="300">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            <h3>Education</h3>
+                            <p>B.Tech in Computer Science Engineering</p>
+                        </div>
+                        <div class="highlight-item" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <h3>Specialization</h3>
+                            <p>Software technology</p>
+                        </div>
+                        <div class="highlight-item" data-aos="zoom-in" data-aos-delay="500">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                            <h3>Achievement</h3>
+                            <p>Multiple Project Completions</p>
+                        </div>
+                    </aside>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 data-aos="fade-up">Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fab fa-java"></i>
-                <h3>Java</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%"></div>
+        <!-- Experience Section -->
+        <section id="experience" class="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <header class="section-header" data-aos="fade-up">
+                    <h2 id="experience-heading">Experience & Education</h2>
+                    <p class="section-subtitle">My journey so far</p>
+                </header>
+                <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+                    <article class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time class="timeline-date">2022 - Present</time>
+                            <h3>B.Tech Computer Science Engineering</h3>
+                            <h4>Centurion University of Technology and Management</h4>
+                            <p>Currently pursuing Bachelor's degree in Computer Science Engineering with focus on software development, data structures, algorithms, and machine learning.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time class="timeline-date">2023</time>
+                            <h3>Machine Learning Projects</h3>
+                            <h4>Personal Development</h4>
+                            <p>Developed multiple machine learning projects including SMS Spam Detection and Handwritten Digit Recognition using Python and various ML libraries.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time class="timeline-date">2024</time>
+                            <h3>Web Development</h3>
+                            <h4>Skill Enhancement</h4>
+                            <p>Expanded skills in web development, creating responsive and interactive websites using modern technologies and best practices.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fas fa-database"></i>
-                <h3>SQL & DBMS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fas fa-code"></i>
-                <h3>DSA</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="flip-left">
-                <i class="fas fa-laptop-code"></i>
-                <h3>C Programming</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 data-aos="fade-up">Projects</h2>
-        <div class="projects-container">
-            <div class="project-card" data-aos="zoom-in">
-                <h3>SMS Spam Detection</h3>
-                <p>A machine learning project that classifies SMS messages as spam or legitimate using advanced NLP techniques.</p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>Machine Learning</span>
-                    <span>NLP</span>
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <header class="section-header" data-aos="fade-up">
+                    <h2 id="skills-heading">Skills & Technologies</h2>
+                    <p class="section-subtitle">What I work with</p>
+                </header>
+                <div class="skills-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="tools">Tools & Technologies</button>
                 </div>
-                <a href="https://github.com/Rakeshraushan16" class="project-link" target="_blank">View Project</a>
-            </div>
-            <div class="project-card" data-aos="zoom-in">
-                <h3>Handwritten Digit Detection</h3>
-                <p>Deep learning model that recognizes handwritten digits using convolutional neural networks.</p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>Deep Learning</span>
-                    <span>Computer Vision</span>
+                <div class="skills-container">
+                    <article class="skill-card programming" data-aos="flip-left" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fab fa-java" aria-hidden="true"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="90" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <p class="skill-description">Object-oriented programming, Spring Framework, Enterprise applications</p>
+                    </article>
+                    
+                    <article class="skill-card programming" data-aos="flip-left" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fab fa-python" aria-hidden="true"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <p class="skill-description">Machine Learning, Data Science, Web Development with Django/Flask</p>
+                    </article>
+                    
+                    <article class="skill-card web" data-aos="flip-left" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square" aria-hidden="true"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="80" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <p class="skill-description">ES6+, DOM manipulation, Async programming, Modern frameworks</p>
+                    </article>
+                    
+                    <article class="skill-card tools" data-aos="flip-left" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3>SQL & DBMS</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="80" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <p class="skill-description">MySQL, PostgreSQL, Database design, Query optimization</p>
+                    </article>
+                    
+                    <article class="skill-card programming" data-aos="flip-left" data-aos-delay="500">
+                        <div class="skill-icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Data Structures & Algorithms</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="85" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <p class="skill-description">Problem solving, Algorithm optimization, Competitive programming</p>
+                    </article>
+                    
+                    <article class="skill-card programming" data-aos="flip-left" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>C Programming</h3>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" data-progress="75" style="width: 0%"></div>
+                            </div>
+                            <span class="percentage">75%</span>
+                        </div>
+                        <p class="skill-description">System programming, Memory management, Low-level programming</p>
+                    </article>
                 </div>
-                <a href="https://github.com/Rakeshraushan16" class="project-link" target="_blank">View Project</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 data-aos="fade-up">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="social-links" data-aos="fade-up">
-                <a href="https://www.linkedin.com/in/rakesh-raushan-6799a92a5" target="_blank" class="linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/Rakeshraushan16" target="_blank" class="github">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/_rakesh_raushan_singh" target="_blank" class="instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://x.com/Rakesh25587" target="_blank" class="twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <header class="section-header" data-aos="fade-up">
+                    <h2 id="projects-heading">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </header>
+                <div class="projects-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                </div>
+                <div class="projects-container">
+                    <article class="project-card ml" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="images/project-placeholder.jpg" alt="SMS Spam Detection Project" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="project-preview" aria-label="Preview SMS Spam Detection project">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <a href="https://github.com/Rakesh161rausahn" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View SMS Spam Detection on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>SMS Spam Detection</h3>
+                            <p>A machine learning project that classifies SMS messages as spam or legitimate using advanced NLP techniques and various classification algorithms.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="stat">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    95% Accuracy
+                                </span>
+                                <span class="stat">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                    500+ Lines
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card ml" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="images/project-placeholder.jpg" alt="Handwritten Digit Detection Project" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="project-preview" aria-label="Preview Handwritten Digit Detection project">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <a href="https://github.com/Rakesh161rausahn" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Handwritten Digit Detection on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Handwritten Digit Detection</h3>
+                            <p>Deep learning model that recognizes handwritten digits using convolutional neural networks with high accuracy on the MNIST dataset.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="stat">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    98% Accuracy
+                                </span>
+                                <span class="stat">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                    300+ Lines
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card web" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="images/project-placeholder.jpg" alt="Portfolio Website Project" loading="lazy">
+                            <div class="project-overlay">
+                                <button class="project-preview" aria-label="Preview Portfolio Website project">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                                <a href="https://github.com/Rakesh161rausahn" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View Portfolio Website on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern, responsive portfolio website showcasing my projects and skills with advanced animations and interactive elements.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="stat">
+                                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                    Responsive
+                                </span>
+                                <span class="stat">
+                                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                                    Fast Loading
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <form class="contact-form" data-aos="fade-left">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <header class="section-header" data-aos="fade-up">
+                    <h2 id="contact-heading">Get In Touch</h2>
+                    <p class="section-subtitle">Let\'s work together</p>
+                </header>
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:rakesh@example.com">rakeshraushansingh1617@gmil.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <a href="tel:+1234567890">+91 7494076176</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <span>India</span>
+                            </div>
+                        </div>
+                        <div class="social-links" data-aos="fade-up">
+                            <a href="https://www.linkedin.com/in/rakesh-raushan-7405ab327" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Rakesh161rausahn" target="_blank" rel="noopener noreferrer" class="social-link github" aria-label="GitHub Profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_rakesh_raushan_singh" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Instagram Profile">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://x.com/Rakesh25587" target="_blank" rel="noopener noreferrer" class="social-link twitter" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
+                            <span class="form-error" id="subject-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required aria-describedby="message-error"></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loading">
+                                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                Sending...
+                            </span>
+                            <span class="submit-success">
+                                <i class="fas fa-check" aria-hidden="true"></i>
+                                Sent!
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Rakesh Raushan. All rights reserved.</p>
-        <a href="#home" class="back-to-top">Back to Top</a>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rakesh Raushan</h3>
+                    <p>B.Tech CSE Student passionate about technology and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/rakesh-raushan-7405ab327" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/Rakesh161rausahn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_rakesh_raushan_singh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/Rakesh25587" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rakesh Raushan. All rights reserved.</p>
+                <button class="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
     </footer>
 
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2 id="modal-title">Project Details</h2>
+                <button class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="" id="modal-project-image">
+                </div>
+                <div class="modal-details">
+                    <h3 id="modal-project-title"></h3>
+                    <p id="modal-project-description"></p>
+                    <div class="modal-tech-stack" id="modal-tech-stack"></div>
+                    <div class="modal-links">
+                        <a href="#" id="modal-github-link" target="_blank" rel="noopener noreferrer" class="modal-link">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            View on GitHub
+                        </a>
+                        <a href="#" id="modal-demo-link" target="_blank" rel="noopener noreferrer" class="modal-link">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
